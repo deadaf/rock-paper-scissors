@@ -23,13 +23,6 @@ let compScore = 0;
 let gameStarted = false;
 
 function getComputerChoice() {
-  function getComputerChoice() {
-    const randomIndex = Math.floor(Math.random() * gameOptions.length);
-    computerSelection = gameOptions[randomIndex].type;
-    const consoleEmoji = gameOptions[randomIndex].emoji;
-    console.log("Computer chose: " + computerSelection + consoleEmoji);
-    chosenOptionEmoji[0].innerText = consoleEmoji;
-  }
   const randomIndex = Math.floor(Math.random() * options.length);
   computerSelection = options[randomIndex].type;
   const consoleEmoji = options[randomIndex].emoji;
