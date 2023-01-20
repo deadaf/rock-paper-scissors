@@ -10,13 +10,24 @@
   <body>
     <div class="wrapper">
       <div class="options">
-        <button class="gameOption" id="rockBtn"><img src="assets/img/rock.png" alt="Rock" /></button>
-        <button class="gameOption" id="paperBtn"><img src="assets/img/paper.png" alt="Paper" /></button>
-        <button class="gameOption" id="scissorsBtn"><img src="assets/img/scissor.png" alt="Scissors" /></button>
+        <button class="gameOption"><img id="rock" src="assets/img/rock.png" alt="Rock" /></button>
+        <button class="gameOption"><img id="paper" src="assets/img/paper.png" alt="Paper" /></button>
+        <button class="gameOption"><img id="scissors" src="assets/img/scissor.png" alt="Scissors" /></button>
       </div>
       <span id="chooseOneBtn"><h3>Choose One!</h3> </span>
 
-      <div class="results"></div>
+      <div class="results">
+        <div class="compResult">
+          <!-- <span id="compEmoji"></span> -->
+          <span id="compScore">0</span>
+          <span>COMPUTER</span>
+        </div>
+        <div class="userResult">
+          <!-- <span id="userEmoji"></span> -->
+          <span id="userScore">0</span>
+          <span>YOU</span>
+        </div>
+      </div>
     </div>
   </body>
   <script src="script.js"></script>
